@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Internal Pages Extension</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #0078D4; /* Blue text for the title */
+        }
+
+        /* Button Styles */
+        .button {
+            background-color: #0078D4; /* Blue background */
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #005A9E; /* Darker blue on hover */
+        }
+
+        /* Add some spacing and hover effects */
+        button:focus {
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Edge Internal Pages</h1>
+        <button class="button" id="open-apps">Open Apps</button>
+        <button class="button" id="open-serviceworker">Check Service Workers</button>
+        <button class="button" id="open-inspect">Open Remote Devices</button>
+        <button class="button" id="open-cookies">Open Cookies Settings</button>
+        <button class="button" id="unregister-sws">Copy Unregister Command</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
