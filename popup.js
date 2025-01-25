@@ -2,6 +2,14 @@ document.getElementById('open-apps').addEventListener('click', function() {
     chrome.tabs.create({ url: 'edge://apps' });
 });
 
+document.getElementById('delete-data').addEventListener('click', function() {
+    chrome.tabs.create({ url: 'edge://settings/clearBrowserData/clear' });
+});
+
+document.getElementById('extension').addEventListener('click', function() {
+    chrome.tabs.create({ url: 'edge://extensions' });
+});
+
 document.getElementById('open-serviceworker').addEventListener('click', function() {
     chrome.tabs.create({ url: 'edge://serviceworker-internals/' });
 });
